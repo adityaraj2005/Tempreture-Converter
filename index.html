@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <br><br><br><h1>Temperature Conversion Calculator</h1>
+    <div id="container">
+        <label for="temp">Temperature:</label>
+        <input type="number" id="temp" placeholder="Enter Temperature">
+        <select id="fromUnit">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+            <option value="Rankine">Rankine</option>
+            <option value="Réaumur">Réaumur</option>
+            <option value="Delisle">Delisle</option>
+            <option value="Newton">Newton</option>
+            <option value="Rémy">Rémy</option>
+            <option value="Romer">Romer</option>
+            <option value="Leiden">Leiden</option>
+        </select>
+        <br><br><br>
+        <label for="convertedTemp">Converted Temperature:</label>
+        <input type="text" id="convertedTemp" readonly>
+        <select id="toUnit">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+            <option value="Rankine">Rankine</option>
+            <option value="Réaumur">Réaumur</option>
+            <option value="Delisle">Delisle</option>
+            <option value="Newton">Newton</option>
+            <option value="Rémy">Rémy</option>
+            <option value="Romer">Romer</option>
+            <option value="Leiden">Leiden</option>
+        </select>
+        <br><br><br>
+        <button onclick="convertTemperature()">Convert</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
